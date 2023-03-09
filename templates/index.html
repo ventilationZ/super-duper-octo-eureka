@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WallE Newspaper Subscription</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-md">
+
+        </div>
+      </nav>
+
+
+      <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Create Data</h2>
+                <br>
+
+                <form action="/insert" method="post">
+                    {% csrf_token %}
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control  mt-2" placeholder="Email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" class="form-control  mt-2" placeholder="Age" name="age" required>
+
+                    </div>
+                     <div class="form-group">
+                        <input type="number" class="form-control  mt-2" placeholder="Phone Number" name="Phone Number" required>
+                     </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control  mt-2" placeholder="Enter  Country" name="country" required>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control  mt-2" placeholder="Enter City" name="city" required>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control  mt-2" placeholder="Enter Area" name="area" required>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control  mt-2" placeholder="Enter Estate" name="estate" required>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control  mt-2" placeholder="Enter House Number" name="house_number" required>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control  mt-2" placeholder="Enter No of Copies" name="copies" required>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control  mt-2" placeholder="Enter Months of Subscription" name="months" required>
+
+                    </div>
+
+
+                    <div class="form-group mt-2">
+                        <select id="gender" name="gender" class="form-control" required>
+                            <option selected>select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid gap-2">
+
+                        <button class="btn btn-success mt-2" type="submit">Insert</button>
+                    </div>
+
+
+
+                </form>
+</body>
+</html>
